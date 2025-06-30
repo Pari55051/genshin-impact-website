@@ -50,7 +50,7 @@ video {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background: #161a2d;
+    background: #1e2f61;
     padding: 25px 20px;
     transition: all 0.4s ease;
 }
@@ -88,17 +88,22 @@ video {
     display: flex;
     align-items: center;
     gap: 0 20px;
-    color: #dbd4d4e3;
+    color: #6b99ea;
     font-weight: 500;
     padding: 15px 10px;
     white-space: nowrap;
     text-decoration: none;
 }
 
-.sidebar-links li a:hover {
-    background: #ffffff2d;
+.sidebar-links li a:hover 
+,.sidebar-links li a:hover i {
+    background: #6b99ea;
     color: #fff;
     border-radius: 5px;
+}
+
+.sidebar-links li a i{
+    color: #8ad7fe;
 }
 
 .user-account {
@@ -110,7 +115,7 @@ video {
 .user-account .user-profile {
     display: flex;
     align-items: center;
-    color: #e5dede;
+    color: #fff;
 }
 
 .user-account .user-profile img {
@@ -136,7 +141,7 @@ video {
 }
 
 .sidebar:hover .user-account {
-    background: #ffffff2d;
+    background: #6b99ea;
     border-radius: 5px;
 }
 
