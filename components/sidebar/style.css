@@ -1,15 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
 }
 
-.nav{
+.sidebar i{
+    color: #8ad7fe;
+}
+
+.nav {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -17,17 +21,17 @@ body{
     width: 70px;
     border-radius: 10px;
     box-sizing: initial;
-    border-left: 5px solid #5285e7;
-    background: #5285e7;
+    border-left: 5px solid #1e2f61;
+    background: #1e2f61;
     transition: 0.5s;
     overflow-x: hidden;
 }
 
-.nav.active{
-    width: 100%;
+.nav.active {
+    width: 300px;
 }
 
-.nav ul{
+.nav ul {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +40,7 @@ body{
     padding-top: 75px;
 }
 
-.nav ul li{
+.nav ul li {
     position: relative;
     display: block;
     width: 100%;
@@ -44,7 +48,7 @@ body{
     border-bottom-left-radius: 20px;
 }
 
-.tooltip{
+.tooltip {
     display: none;
     position: fixed;
     left: 117px;
@@ -54,34 +58,35 @@ body{
     margin: 15px 0;
 }
 
-.tooltip::after{
+.tooltip::after {
     content: '';
     position: absolute;
     width: 15px;
     height: 15px;
     background: #272727;
     transform: rotateZ(45deg);
-    top: 10px;
+    top: 7.5px;
     left: -4px;
 }
 
-.list:hover .tooltip{
+.list:hover .tooltip {
     display: block;
 }
 
-.nav ul li.active{
-    background: #3461cc;
+.nav ul li.active {
+    background: #6b99ea;
 }
 
-.nav ul li b:nth-child(1){
+.nav ul li b:nth-child(1) {
     position: absolute;
     top: -20px;
     height: 20px;
     width: 100%;
-    background-color: #3461cc;
+    background-color: #6b99ea;
+    display: none;
 }
 
-.nav ul li b:nth-child(1)::before{
+.nav ul li b:nth-child(1)::before {
     content: '';
     position: absolute;
     top: 0;
@@ -89,19 +94,19 @@ body{
     width: 100%;
     height: 100%;
     border-bottom-right-radius: 20px;
-    background: #5e84e0;
+    background: #1e2f61;
 }
 
-.nav ul li b:nth-child(2){
+.nav ul li b:nth-child(2) {
     position: absolute;
     bottom: -20px;
     height: 20px;
     width: 100%;
-    background: #3461cc;
+    background: #6b99ea;
     display: none;
 }
 
-.nav ul li b:nth-child(2)::before{
+.nav ul li b:nth-child(2)::before {
     content: '';
     position: absolute;
     top: 0;
@@ -109,15 +114,15 @@ body{
     width: 100%;
     height: 100%;
     border-top-right-radius: 20px;
-    background: #5e84e0;
+    background: #1e2f61;
 }
 
 .nav ul li.active b:nth-child(1),
-.nav ul li.active b:nth-child(2){
+.nav ul li.active b:nth-child(2) {
     display: block;
 }
 
-.nav ul li a{
+.nav ul li a {
     position: relative;
     display: block;
     width: 100%;
@@ -126,11 +131,11 @@ body{
     color: #fff;
 }
 
-.nav ul li.active a{
+.nav ul li.active a {
     color: #fff;
 }
 
-.nav ul li a .icon{
+.nav ul li a .icon {
     position: relative;
     display: block;
     min-width: 60px;
@@ -139,12 +144,11 @@ body{
     text-align: center;
 }
 
-.nav ul li a .icon img{
-    width: 26px;
-    height: 26px;
+.nav ul li a .icon i {
+    font-size: 26px;
 }
 
-.na ul li a .title{
+.nav ul li a .title {
     position: relative;
     display: block;
     padding-left: 10px;
@@ -153,18 +157,18 @@ body{
     white-space: normal;
 }
 
-.toggle{
+.toggle {
     position: fixed;
     top: 40px;
     left: 40px;
     float: left;
 }
 
-.toggle.active{
+.toggle.active {
     left: 270px;
 }
 
-.genshin{
+.genshin-text {
     color: #fff;
     font-size: 25px;
     display: none;
@@ -174,20 +178,22 @@ body{
 }
 
 
-.toggle img{
+.toggle span img,
+.toggle span i {
     position: absolute;
-    color: #fff;
+    color: #6b99ea;
     width: 34px;
     height: 34px;
+    font-size: 34px;
     display: none;
 }
 
-.toggle img.open,
-.toggle.active img.close{
+.toggle span img.open,
+.toggle.active span i.close {
     display: block;
 }
 
-.toggle.active img.open,
-.toggle img.close{
+.toggle.active span img.open,
+.toggle span i.close {
     display: none;
 }
