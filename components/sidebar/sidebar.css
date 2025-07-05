@@ -9,10 +9,6 @@ body {
     min-height: 100vh;
 }
 
-.sidebar i{
-    color: #8ad7fe;
-}
-
 .nav {
     position: fixed;
     top: 20px;
@@ -146,6 +142,7 @@ body {
 
 .nav ul li a .icon i {
     font-size: 26px;
+    color: #8ad7fe;
 }
 
 .nav ul li a .title {
@@ -181,7 +178,7 @@ body {
 .toggle span img,
 .toggle span i {
     position: absolute;
-    color: #6b99ea;
+    color: #8ad7fe;
     width: 34px;
     height: 34px;
     font-size: 34px;

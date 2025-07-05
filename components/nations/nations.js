@@ -1,3 +1,5 @@
+// sidebar
+
 let menuToggle = document.querySelector(".toggle")
 let Navigation = document.querySelector(".nav")
 
@@ -6,15 +8,15 @@ menuToggle.onclick = function () {
     Navigation.classList.toggle("active")
 }
 
-let list = document.querySelectorAll(".list")
+let list = document.querySelectorAll(".sidebar-li")
 
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function () {
         let j = 0;
         while (j < list.length) {
-            list[j++].className = "list"
+            list[j++].className = "sidebar-li"
         }
-        list[i].className = "list active";
+        list[i].className = "sidebar-li";
     }
 }
 
@@ -31,3 +33,5 @@ document.querySelector('.close').addEventListener('click', () =>{
         item.style.display = ""
     })
 })
+
+// nations
