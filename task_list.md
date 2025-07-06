@@ -15,10 +15,10 @@ task list made for the the project genshin impact for the hackathon Athena
         - [-] make layout
         - [-] make sub-sections
         - [-] make character cards
-    - [-] Map
+    - [x] Map
         - [x] design structre
         - [x] make layout
-        - [-] add map
+        - [x] add map
     - [x] Nations
         - [x] design structure
         - [x] think of content
@@ -29,7 +29,7 @@ task list made for the the project genshin impact for the hackathon Athena
         - [x] fix prev button thumbnail
     - [-] Weapons
         - [x] design structure
-        - [-] think of content (hero section)
+        - [x] think of content (hero section)
         - [-] think of content (weapon general card finalize)
         - [-] finalize color scheme
         - [-] make layout
@@ -46,7 +46,6 @@ task list made for the the project genshin impact for the hackathon Athena
     - [x] Side bar
     - [-] JS Slider -- for characters
     - [x] Full Page Slider -- for nations
-    - [-] footer (design + make)
 
 - [-] Features
     - [-] back to top button

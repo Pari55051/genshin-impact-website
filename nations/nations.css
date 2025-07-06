@@ -173,14 +173,12 @@ body {
 }
 
 .genshin-text {
-    color: #fff;
-    font-size: 25px;
     display: none;
     position: absolute;
-    top: 20px;
-    left: 17px;
+    top: 10px;
+    width: 180px;
+    left: 35px;
 }
-
 
 .toggle span img,
 .toggle span i {
@@ -190,6 +188,10 @@ body {
     height: 34px;
     font-size: 34px;
     display: none;
+}
+
+.toggle span i {
+    top: 12px;
 }
 
 .toggle span img.open,
@@ -202,11 +204,7 @@ body {
     display: none;
 }
 
-/*==========================================
-============================================
-                nations 
-============================================
-============================================*/
+/*nations*/
 .carousel {
     height: 100vh;
     width: 100vw;
