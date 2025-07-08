@@ -3,7 +3,7 @@ task list made for the the project genshin impact for the hackathon Athena
 
 - [-] Pages
     - [-] Home
-        - [-] design structure
+        - [x] design structure
         - [-] think of content
         - [-] find assets
         - [-] make layout
@@ -12,9 +12,9 @@ task list made for the the project genshin impact for the hackathon Athena
         - [x] think of content
         - [x] think of headings for each sub-sections
         - [x] find assets
-        - [-] make layout
-        - [-] make sub-sections
-        - [-] make character cards
+        - [x] make layout
+        - [x] make sub-sections
+        - [x] make character cards
     - [x] Map
         - [x] design structre
         - [x] make layout
@@ -30,7 +30,7 @@ task list made for the the project genshin impact for the hackathon Athena
     - [-] Weapons
         - [x] design structure
         - [x] think of content (hero section)
-        - [-] think of content (weapon general card finalize)
+        - [x] think of content (weapon general card finalize)
         - [-] finalize color scheme
         - [-] make layout
         - [-] design section layout
