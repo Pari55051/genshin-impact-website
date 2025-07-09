@@ -3,12 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
     overflow-x: hidden;
+}
+
+/* background */
+video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 /* sidebar */
@@ -202,27 +210,48 @@ body {
     display: none;
 }
 
-/* Top Characters */
-.top-chars {
+/* Weapons */
+.weapon-sec {
+    width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
-    position: relative;
+    position: sticky;
+    top: 0;
+    padding: 1.5rem;
+    /* padding-top: 25px; */
+    /* background-color: rgb(200, 200, 0); */
 }
 
-.char-section.hero {
+.weapon-sec:nth-child(2) {
+    background-color: rgb(12, 75, 125);
+}
+
+.weapon-sec:nth-child(3) {
+    background-color: rgb(200, 200, 0);
+}
+
+.weapon-sec:nth-child(4) {
+    background-color: rgb(0, 200, 200);
+}
+
+.weapon-sec:nth-child(5) {
+    background-color: rgb(200, 0, 200);
+}
+
+.weapon-sec:nth-child(6) {
+    background-color: rgb(67, 168, 57);
+}
+
+.hero {
     width: 100vw;
     height: 100vh;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    background: url(../assets/top-chars-bg3.avif);
-    /* background-position: center; */
-    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
-.char-section.hero::after {
+.hero::after {
     content: '';
     width: 100vw;
     top: 0;
@@ -232,171 +261,110 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.char-section.hero h1 {
+.hero h1 {
     color: #fff;
     z-index: 9;
     font-size: 140px;
 }
 
-.top-chars-nav {
-    position: fixed;
-    /* margin: 3vh 10vw; */
-    left: 10vw;
-    top: 3vh;
-    height: 2.5rem;
-    width: 80vw;
-    border-radius: 20px;
-    background-color: #1e2f61;
+.weapon-sec h1 {
+    /* line-height: 100px; */
+    font-size: 52px;
+    justify-self: center;
+    text-align: center;
+}
+
+.detail-card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 100000000000000000000000000000000000000;
-}
-
-.top-chars-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 100px;
-    font-size: 25px;
-}
-
-.top-chars-nav ul li a {
-    text-decoration: none;
-    color: #8ad7fe;
-}
-
-.char-section {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    padding: 3rem;
-    padding-left: 10rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    scroll-snap-align: start;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.char-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 10;
-}
-
-.char-section h1 {
-    font-size: 52px;
-}
-
-#top-dps {
-    background: url(../assets/top-dps-bg.webp);
-}
-
-#top-buffer {
-    background: url(../assets/top-buffer-bg.webp);
-}
-
-#top-shielder {
-    background: url(../assets/top-shielder-bg.webp);
-}
-
-#top-healer {
-    background: url(../assets/top-healer-bg.webp);
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    z-index: 100;
-    position: relative;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.char-section .wrapper {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.char-section.active .wrapper {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.card {
-    width: 320px;
-    height: 400px;
-    margin: 15px;
-    padding: 2rem 1rem;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
-    transition: 0.5s ease-in-out;
+    margin: 1rem auto;
+    width: max-content;
+    height: min-content;
+    background-color: #191919;
     border-radius: 30px;
-    background-color: transparent;
-    backdrop-filter: blur(15px);
-}
-
-.card:hover {
-    transform: translateY(20px);
-}
-
-.card:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s all;
-    opacity: 0;
-}
-
-.card:hover:before {
-    opacity: 1;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 30px;
-}
-
-.card .info {
-    position: relative;
-    z-index: 3;
+    gap: 20px;
+    padding: 30px;
+    line-height: 30px;
     color: #fff;
+}
+
+.detail-card img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Slider */
+.swiper {
+    max-width: 60%;
+    overflow: visible;
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    margin-top: 2rem;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.swiper-slide::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    /* background: linear-gradient(to bottom right, #b8b8b88f, #ffffff5e); */
+}
+
+.swiper-slide-active::after {
+    background: none;
+}
+
+.swiper-slide>div {
+    text-align: center;
+    display: none;
     opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s all;
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 1rem;
-    border-radius: 25px;
 }
 
-.card:hover .info {
+.swiper-slide-active div {
+    display: block;
     opacity: 1;
-    transform: translateY(10px);
+    position: relative;
+    bottom: 3.2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    margin: 0 25px;
+    color: #fff;
+    padding: 0.5rem;
 }
 
-.card .info h1 {
-    margin: 0;
+.swiper-slide p {
+    font-size: 0.773124rem;
+    /* font-family: "Libre Baskerville", serif; */
+    /* position: relative; */
 }
 
-.card .info p {
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin-top: 8px;
-    margin-bottom: 20px;
+.swiper-slide img {
+    display: block;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 3px 17px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+}
+
+.swiper-pagination {
+    width: fit-content;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10rem;
 }

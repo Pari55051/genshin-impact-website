@@ -11,12 +11,10 @@ body {
     margin: 0;
     background-color: #000;
     color: #eee;
-    font-size: 12px;
 }
 
 /* sidebar */
 .nav {
-    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -28,6 +26,7 @@ body {
     background: #1e2f61;
     transition: 0.5s;
     overflow-x: hidden;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 }
 
 .nav.active {
@@ -51,7 +50,7 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-.nav ul li .tooltip {
+.tooltip {
     display: none;
     position: fixed;
     left: 117px;
@@ -61,13 +60,14 @@ body {
     margin: 15px 0;
 }
 
-.nav ul li .tooltip::after {
+.tooltip::after {
     content: '';
     position: absolute;
     width: 15px;
     height: 15px;
     background: #272727;
     transform: rotateZ(45deg);
+    top: 7.5px;
     left: -4px;
 }
 
@@ -161,11 +161,11 @@ body {
 }
 
 .toggle {
-    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     position: fixed;
     top: 40px;
     left: 40px;
     float: left;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 }
 
 .toggle.active {
@@ -322,6 +322,7 @@ body {
 
 .thumbnail .item .content .title {
     font-weight: 500;
+    font-size: 12px;
 }
 
 .thumbnail .item .content .description {
