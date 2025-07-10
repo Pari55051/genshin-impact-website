@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url(../assets/fonts/playfair-display.regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -220,8 +225,11 @@ iframe {
 }
 
 h1 {
-    color: #000;
+    /* color: #000; */
     margin: 1.5rem;
     margin-left: 150px;
-    font-size: 40px;
+    font-size: 52px;
+    font-family: 'Playfair';
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url(../assets/fonts/playfair-display.regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -222,23 +227,28 @@ video {
 }
 
 .weapon-sec:nth-child(2) {
-    background-color: rgb(12, 75, 125);
+    background: #63c4eb;
+    background: linear-gradient(90deg, rgba(99, 196, 235, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(255, 232, 82, 1) 100%);
 }
 
 .weapon-sec:nth-child(3) {
-    background-color: rgb(200, 200, 0);
+    background: #9e5eff;
+    background: linear-gradient(90deg, rgba(158, 94, 255, 1) 0%, rgba(250, 184, 77, 1) 100%);
 }
 
 .weapon-sec:nth-child(4) {
-    background-color: rgb(0, 200, 200);
+    background: #ff5e7e;
+    background: linear-gradient(90deg, rgba(255, 94, 126, 1) 0%, rgba(255, 244, 122, 1) 100%);
 }
 
 .weapon-sec:nth-child(5) {
-    background-color: rgb(200, 0, 200);
+    background: #ffb95e;
+    background: linear-gradient(90deg, rgba(255, 185, 94, 1) 0%, rgba(97, 242, 160, 1) 100%);
 }
 
 .weapon-sec:nth-child(6) {
-    background-color: rgb(67, 168, 57);
+    background: #ff5e9f;
+    background: linear-gradient(90deg, rgba(255, 94, 159, 1) 0%, rgba(97, 162, 242, 1) 100%);
 }
 
 .hero {
@@ -265,6 +275,7 @@ video {
     color: #fff;
     z-index: 9;
     font-size: 140px;
+    text-shadow: none;
 }
 
 .weapon-sec h1 {
@@ -272,6 +283,9 @@ video {
     font-size: 52px;
     justify-self: center;
     text-align: center;
+    font-family: 'Playfair';
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .detail-card {
