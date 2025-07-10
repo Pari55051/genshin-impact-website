@@ -1,12 +1,13 @@
 #  ⚔️💫 Genshin Impact Tribute Website
 
+here's my favourite genshin quote:
 > IS THIS WHAT JUSTICE MEANS TO YOU? ANSWER ME, NEUVILLETTE!
->
->                                                          ~ Vautrin (Neuvillette's Story Quest)
+> 
+> ~ Vautrin (Neuvillette's Story Quest)
 
 
 ## Live Demo
-[]()
+[https://pari55051.github.io/genshin-impact-website/](https://pari55051.github.io/genshin-impact-website/)
 
 ## Pages
 --> Home page
