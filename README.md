@@ -2,7 +2,6 @@
 This is a triute website for the game [Genshin Impact](https://genshin.hoyoverse.com/en/home) by [HoyoVerse](https://www.hoyoverse.com/en-us/). Me and my siblings really like this game, so I thought it would make for a cool project!
 
 
-
 here's my favourite genshin quote:
 > IS THIS WHAT JUSTICE MEANS TO YOU? ANSWER ME, NEUVILLETTE!
 > 
@@ -14,6 +13,7 @@ here's my favourite genshin quote:
 ## Live Demo
 [https://pari55051.github.io/genshin-impact-website/](https://pari55051.github.io/genshin-impact-website/)
 
+P.S   I am really proud of the 'Nations' page, do check it out!
 
 
 ## Pages
