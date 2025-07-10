@@ -29,10 +29,10 @@ let carouselDom = document.querySelector('.carousel');
 let SliderDom = carouselDom.querySelector('.carousel .nations-li');
 let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-let timeDom = document.querySelector('.carousel .time');
+// let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 3000;
+let timeRunning = 2000;
 let timeAutoNext = 10000;
 
 nextDom.onclick = function(){
@@ -42,10 +42,12 @@ nextDom.onclick = function(){
 prevDom.onclick = function(){
     showSlider('prev');    
 }
+
 let runTimeOut;
 let runNextAuto = setTimeout(() => {
     next.click();
 }, timeAutoNext)
+
 function showSlider(type){
     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .nations-li .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
@@ -70,3 +72,34 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+
+// document.body.addEventListener('keydown', (ev) => {
+//     // console.log(ev.key)
+//     if (ev.key == "ArrowRight") {
+//         showSlider('next')
+//     }
+//     if (ev.key == "ArrowLeft") {
+//         showSlider('prev')
+//     }
+// })
+
+// keyboard input for slider
+let intervalId;
+let canExecute = true; // Flag to control execution
+
+document.addEventListener('keydown', function(ev) {
+  if (canExecute) {
+    // console.log(ev.key)
+    if (ev.key == "ArrowRight") {
+        showSlider('next')
+    }
+    if (ev.key == "ArrowLeft") {
+        showSlider('prev')
+    }
+
+    canExecute = false; // Prevent immediate re-execution
+    intervalId = setTimeout(() => {
+      canExecute = true; // Allow execution again after the interval
+    }, timeRunning); // 200 milliseconds interval between executions
+  }
+});

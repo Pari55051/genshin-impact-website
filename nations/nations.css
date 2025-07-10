@@ -228,7 +228,7 @@ body {
 
 .carousel .nations-li .item .content {
     position: absolute;
-    top: 10%;
+    top: 40px;
     max-width: 60%;
     width:auto;
     left: 35%;
@@ -250,7 +250,7 @@ body {
 .carousel .nations-li .item .topic {
     font-size: 5em;
     font-weight: bold;
-    line-height: 1.1em;
+    line-height: 0.9em;
 }
 
 .carousel .nations-li .item .topic {
@@ -258,6 +258,7 @@ body {
 }
 
 .carousel .nations-li .item .des {
+    margin-top: 10px;
     font-size: 16px;
 }
 
@@ -284,7 +285,7 @@ body {
 /* thumbail */
 .thumbnail {
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
     left: 50%;
     width: max-content;
     z-index: 100;
@@ -407,7 +408,7 @@ body {
     width: 120px;
     height: 150px;
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
     left: 50%;
     border-radius: 30px;
     animation: showImage 0.5s linear 1 forwards;
@@ -466,7 +467,7 @@ body {
     to {
         width: 120px;
         height: 150px;
-        bottom: 50px;
+        bottom: 25px;
         left: 50%;
         border-radius: 20px;
     }
