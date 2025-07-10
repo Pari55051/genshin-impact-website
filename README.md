@@ -42,3 +42,4 @@ P.S   I am really proud of the 'Nations' page, do check it out!
 
 - assets: google, [Genshin Impact Official Website(s)](https://genshin.hoyoverse.com/en/home?utm_source=fab&utm_medium=home), [Genshin Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki)
 - fonts: [Nocturne](https://github.com/warszawskie-kroje/nocturne/tree/maste), [Violet Sans](https://github.com/violetoffice/violet_sans), [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
+- icons: [Phosphor Icons](https://phosphoricons.com/)
