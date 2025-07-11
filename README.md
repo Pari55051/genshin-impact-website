@@ -1,5 +1,5 @@
 #  ⚔️💫 Genshin Impact Tribute Website
-This is a triute website for the game [Genshin Impact](https://genshin.hoyoverse.com/en/home) by [HoyoVerse](https://www.hoyoverse.com/en-us/). My siblings really like this game, so I thought it would make for a cool project!
+This is a tribute website for the game [Genshin Impact](https://genshin.hoyoverse.com/en/home) by [HoyoVerse](https://www.hoyoverse.com/en-us/). My siblings really like this game, so I thought it would make for a cool project!
 
 
 here's my favourite genshin quote:
@@ -60,3 +60,6 @@ P.S   I am really proud of the 'Nations' page, do check it out!
 - fonts: [Nocturne](https://github.com/warszawskie-kroje/nocturne/tree/maste), [Violet Sans](https://github.com/violetoffice/violet_sans), [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
 - icons: [Phosphor Icons](https://phosphoricons.com/)
 - siblings: for the un-needed(kinda needed though) style guide
+
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
