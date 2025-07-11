@@ -41,7 +41,7 @@ P.S   I am really proud of the 'Nations' page, do check it out!
 - a lot of new JS concepts
 - a lot of teeny details of CSS properties
 - structuring and executing a large project(max no. pages + content that i've ever built)
-- patience (this took ~29 hours of code + ~3+ hours of finding_editing assets)
+- patience (this took ~29 hours of code + ~3+ hours of finding/editing assets)
 
 
 
