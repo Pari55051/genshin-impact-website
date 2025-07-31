@@ -37,18 +37,13 @@ task list made for the the project genshin impact for the hackathon Athena
         - [x] make section type layout for each weapon type
         - [x] make general weapon card
         - [x] make slider for each weapon type (autoslide?)
-    - [-] About Us
-        - [-] think of content
-        - [-] design structure
-        - [-] finalize color scheme
 
 - [x] Components
     - [x] Side bar
-    - [-] JS Slider -- for characters
+    - [x] JS Slider -- for characters
     - [x] Full Page Slider -- for nations
 
 - [x] Features
-    - [-] back to top button
     - [x] find fonts
     - [x] delay scrolling in characters
     - [x] smooth scrolling in weapons
